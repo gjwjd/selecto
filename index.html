@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/custom.js"></script>
+    <title>셀렉토</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- start of :: header -->
+        <header id="header">
+            <header class="header">
+                <div class="header__inner">
+                    <h1 class="logo">
+                        <a href="main.html">
+                            <img src="img/logo.png" alt="logo" />
+                        </a>
+                    </h1>
+
+                    <ul class="menu">
+                        <li class="menulist"><a href="#">셀렉토커피</a></li>
+                        <li class="menulist"><a href="#">메뉴</a></li>
+                        <li class="menulist"><a href="#">매장안내</a></li>
+                        <li class="menulist"><a href="#">WHAT'S NEW</a></li>
+                    </ul>
+
+                    <div class="link">
+                        <button class="link__found">창업안내</button>
+                        <a href="https://blog.naver.com/maxone01" target="_blank"><img src="img/h_naver.svg"
+                                alt="" /></a>
+                        <a href="https://www.youtube.com/channel/UCM8GQsYfu6I4MgYwjnCJXrg/featured" target="_blank"><img
+                                src="img/h_youtube.svg" alt="" /></a>
+                        <a href="https://www.instagram.com/selecto_coffee/" target="_blank"><img src="img/h_instar.svg"
+                                alt="" /></a>
+                    </div>
+
+                    <div class="mobile-menu">
+                        <div class="menu-burger">
+                            <div class="burger__bar"></div>
+                            <div class="burger__bar"></div>
+                            <div class="burger__bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-hidden">
+                    <div class="header-hidden__inner">
+                        <ul class="menu-hidden">
+                            <ul>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">브랜드 스토리</a>
+                                </li>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">HISTORY</a>
+                                </li>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">경쟁력</a>
+                                </li>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">ONE FOR ONE</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">Signature</a>
+                                </li>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">Coffee</a>
+                                </li>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">Cookies</a>
+                                </li>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">Beverage</a>
+                                </li>
+                                <li class="menu-hidden-list"><a class="list-link" href="#">Deli&Dessert</a></li>
+                                <li class="menu-hidden-list"><a class="list-link" href="#">MD</a></li>
+                            </ul>
+                            <ul>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">매장찾기</a>
+                                </li>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">오픈 예정 매장</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">새로운 소식</a>
+                                </li>
+                                <li class="menu-hidden-list">
+                                    <a class="list-link" href="#">보도자료</a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile_menu_wrap">
+                    <div class="mobile_menu_inner">
+                        <ul class="mobile_menu_box">
+                            <div class="close"><img src="img/X.png"></div>
+                            <li>
+                                <div class="mobile_menu_title">
+                                    <h3>셀렉토커피</h3>
+                                    <img class="down" src="img/arrow-down.png">
+                                    <img class="up" src="img/arrow-up.png">
+                                </div>
+                                <ul class="mobile_hidden_menu">
+                                    <li><a href="#">브랜드스토리</a></li>
+                                    <li><a href="#">HISTORY</a></li>
+                                    <li><a href="#">경쟁력</a></li>
+                                    <li><a href="#">ONE FOR ONE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="mobile_menu_title">
+                                    <h3>메뉴</h3>
+                                    <img class="down" src="img/arrow-down.png">
+                                    <img class="up" src="img/arrow-up.png">
+                                </div>
+                                <ul class="mobile_hidden_menu">
+                                    <li><a href="#">Signature</a></li>
+                                    <li><a href="#">Coffee</a></li>
+                                    <li><a href="#">Cookie</a></li>
+                                    <li><a href="#">Beverage</a></li>
+                                    <li><a href="#">Deli&Dessert</a></li>
+                                    <li><a href="#">MD</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="mobile_menu_title">
+                                    <h3>매장안내</h3>
+                                    <img class="down" src="img/arrow-down.png">
+                                    <img class="up" src="img/arrow-up.png">
+                                </div>
+                                <ul class="mobile_hidden_menu">
+                                    <li><a href="#">매장찾기</a></li>
+                                    <li><a href="#">오픈 예정 매장</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="mobile_menu_title">
+                                    <h3>WHAT's NEW</h3>
+                                    <img class="down" src="img/arrow-down.png">
+                                    <img class="up" src="img/arrow-up.png">
+                                </div>
+                                <ul class="mobile_hidden_menu">
+                                    <li><a href="#">새로운 소식</a></li>
+                                    <li><a href="#">보도자료</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="mobile_sns">
+                            <li><a href="#"><img src="img/h_naver.svg"></a></li>
+                            <li><a href="#"><img src="img/h_youtube.svg"></a></li>
+                            <li><a href="#"><img src="img/h_instar.svg"></a></li>
+                        </ul>
+                        <div class="mobile_button">
+                            창업안내
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+        </header>
+        <div id="container">
+            <div class="vi_wrap">
+                <ul class="vi_slide">
+                    <li>
+                        <img class="pc_vi" src="img/visual1.jpg">
+                        <img class="mo_vi" src="img/mo_visual1.jpg">
+                    </li>
+                    <li>
+                        <img class="pc_vi" src="img/visual2.jpg">
+                        <img class="mo_vi" src="img/mo_visual2.jpg">
+                    </li>
+                    <li>
+                        <img class="pc_vi" src="img/visual3.jpg">
+                        <img class="mo_vi" src="img/mo_visual3.jpg">
+                    </li>
+                    <li>
+                        <img class="pc_vi" src="img/visual4.jpg">
+                        <img class="mo_vi" src="img/mo_visual4.jpg">
+                    </li>
+                    <li>
+                        <img class="pc_vi" src="img/visual1.jpg">
+                        <img class="mo_vi" src="img/mo_visual1.jpg">
+                    </li>
+                </ul>
+                <div class="scroll">
+                    <div class="scroll_box">
+                        <div></div>
+                    </div>
+                    <p>scroll</p>
+                    <div class="vis_scroll_bar"></div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="category_half_left">
+                    <ul class="category_bg">
+                        <li><img src="img/signature_bg.jpg"></li>
+                        <li><img src="img/beverage_bg.jpg"></li>
+                        <li><img src="img/coffee_bg.png"></li>
+                        <li><img src="img/cookie_bg.png"></li>
+                    </ul>
+                    <div class="category_menu">
+                        <h2>SELECTO MENU</h2>
+                        <ul class="category_btn">
+                            <li class="on">SIGNATURE</li>
+                            <li>BEVERAGE</li>
+                            <li>COFFEE</li>
+                            <li>COOKIE</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category_half_right">
+                    <ul>
+                        <li class="right_page on">
+                            <h2>SIGNATURE</h2>
+                            <p>셀렉토 감성과 재미를 듬뿍 담아 낸, 셀렉토에서<br>
+                                맛볼 수 있는 시그니처 음료</p>
+                            <div class="sig_img">
+                                <img src="img/signature_item1.png">
+                                <img src="img/signature_item2.png">
+                                <img src="img/signature_item3.png">
+                            </div>
+                            <h3>추천 토핑류</h3>
+                            <ul class="topping">
+                                <li>
+                                    <img src="img/topping_1.png" alt="바닐라빈 토핑">
+                                    <p>시럽_바닐라빈</p>
+                                </li>
+                                <li>
+                                    <img src="img/topping_2.png" alt="카라멜 토핑">
+                                    <p>시럽_카라멜</p>
+                                </li>
+                                <li>
+                                    <img src="img/topping_3.png" alt="오트밀 토핑">
+                                    <p>우유_오트밀</p>
+                                </li>
+                                <li>
+                                    <img src="img/topping_4.png" alt="흑임자 토핑">
+                                    <p>크림_흑임자</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="right_page">
+                            <h2>BEVERAGE</h2>
+                            <p>고객의 라이프 스타일에 맞춰 더욱 다양하게 즐길<br>
+                                수 있는 셀렉토의 음료 라인업!</p>
+                            <div class="sig_img">
+                                <img src="img/beverage_item1.png">
+                                <img src="img/beverage_item2.png">
+                                <img src="img/beverage_item3.png">
+                            </div>
+                            <h3>추천 토핑류</h3>
+                            <ul class="topping">
+                                <li>
+                                    <img src="img/topping_2.png" alt="카라멜 토핑">
+                                    <p>시럽_카라멜</p>
+                                </li>
+                                <li>
+                                    <img src="img/topping_3.png" alt="오트밀 토핑">
+                                    <p>우유_오트밀</p>
+                                </li>
+                                <li>
+                                    <img src="img/topping_4.png" alt="흑임자 토핑">
+                                    <p>크림_흑임자</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="right_page">
+                            <h2>COFFEE</h2>
+                            <p>셀렉토는 품질 좋은 원두를 선별해, 최적의 로스팅 포인트로<br>
+                                더욱 섬세하게 균형잡힌 풍미의 커피를 고객에게 선사합니다.</p>
+                            <div class="sig_img">
+                                <img src="img/coffee_item1.png">
+                                <img src="img/coffee_item2.png">
+                                <img src="img/coffee_item3.png">
+                            </div>
+                            <h3>추천 토핑류</h3>
+                            <ul class="topping">
+                                <li>
+                                    <img src="img/topping_3.png" alt="오트밀 토핑">
+                                    <p>우유_오트밀</p>
+                                </li>
+                                <li>
+                                    <img src="img/topping_4.png" alt="흑임자 토핑">
+                                    <p>크림_흑임자</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="right_page">
+                            <h2>COOKIE</h2>
+                            <p>남녀노소, 어디서나 맛있게! 셀렉토 시그니처 수제 쿠키</p>
+                            <div class="sig_img">
+                                <img src="img/cookie_item1.png">
+                                <img src="img/cookie_item2.png">
+                                <img src="img/cookie_item3.png">
+                            </div>
+                            <h3>추천 토핑류</h3>
+                            <ul class="topping">
+                                <li>
+                                    <img src="img/topping_1.png" alt="바닐라빈 토핑">
+                                    <p>시럽_바닐라빈</p>
+                                </li>
+                                <li>
+                                    <img src="img/topping_2.png" alt="카라멜 토핑">
+                                    <p>시럽_카라멜</p>
+                                </li>
+                                <li>
+                                    <img src="img/topping_3.png" alt="오트밀 토핑">
+                                    <p>우유_오트밀</p>
+                                </li>
+                                <li>
+                                    <img src="img/topping_4.png" alt="흑임자 토핑">
+                                    <p>크림_흑임자</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <ul class="category_image">
+                    <li class="on"><img src="img/sigature_1.png"></li>
+                    <li><img src="img/beverage_1.png"></li>
+                    <li><img src="img/coffee_1.png"></li>
+                    <li><img src="img/cookie_1.png"></li>
+                </ul>
+            </div>
+            <div class="identity">
+                <div class="identity_inner">
+                    <h2>MY COFFEE,<br>OUR TABLE.</h2>
+                    <div class="identity_bg">
+                        <img src="img/con3_bg.jpg">
+                    </div>
+                    <div class="roll">
+                        <div class="slide_text_1">
+                            <span>
+                                <img src="img/marquee.svg">
+                                <p>매장에서 직접 구워 맛있는 셀렉토 쿠키 </p>
+                            </span>
+                            <span>
+                                <img src="img/marquee.svg">
+                                <p>매장에서 직접 구워 맛있는 셀렉토 쿠키 </p>
+                            </span>
+                            <span>
+                                <img src="img/marquee.svg">
+                                <p>매장에서 직접 구워 맛있는 셀렉토 쿠키 </p>
+                            </span>
+                            <span>
+                                <img src="img/marquee.svg">
+                                <p>매장에서 직접 구워 맛있는 셀렉토 쿠키 </p>
+                            </span>
+                            <span>
+                                <img src="img/marquee.svg">
+                                <p>매장에서 직접 구워 맛있는 셀렉토 쿠키 </p>
+                            </span>
+                        </div>
+                        <div class="slide_text_2">
+                            <span>
+                                <img src="img/marquee.svg">
+                                <p>매장에서 직접 구워 맛있는 셀렉토 쿠키 </p>
+                            </span>
+                            <span>
+                                <img src="img/marquee.svg">
+                                <p>매장에서 직접 구워 맛있는 셀렉토 쿠키 </p>
+                            </span>
+                            <span>
+                                <img src="img/marquee.svg">
+                                <p>매장에서 직접 구워 맛있는 셀렉토 쿠키 </p>
+                            </span>
+                            <span>
+                                <img src="img/marquee.svg">
+                                <p>매장에서 직접 구워 맛있는 셀렉토 쿠키 </p>
+                            </span>
+                            <span>
+                                <img src="img/marquee.svg">
+                                <p>매장에서 직접 구워 맛있는 셀렉토 쿠키 </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="give-count__wrap">
+                <div class="inner give-count__wrap-inner">
+                    <div class="count-info__box_wrap">
+                        <div class="count-info__box">
+                            <div class="count-info__box-head">
+                                <span>셀렉토 커피에서 커피와 기부를 함께 즐기세요!</span>
+                                <span>매일 마시는 커피 한 잔을 '마시기만 해도 기부'가 되는 곳이 있습니다. <br>셀렉토커피에서는 SELECTO'S PICK을 마시기만 해도
+                                    결식아동에게 '우유 1팩'이 기부됩니다.</span>
+                            </div>
+                            <div class="count-info__box-contents">
+                                <span>결식아동에게 기부된 우유</span>
+                                <span id="charity-count">304,478</span>
+
+                                <span>2023.06.01일 기준</span>
+                            </div>
+                            <button class="count-info__box-button">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="count-circle_contents">
+                        <div class="circle-line">
+                            <div class="inline-main_con"></div>
+                            <div class="inline-con"></div>
+                            <div class="inline-point"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="news_wrap">
+                    <div class="news_left">
+                        <h2><span>NEWS & </span><span>EVENT</span></h2>
+                    </div>
+                    <div class="news_right">
+                        <ul class="event">
+                            <li>
+                                <div class="event_title">
+                                    <p>EVENT</p>
+                                    <h3>[NEW MENU] Chill out, SUMMER VIBES</h3>
+                                    <p class="day">2023/05/22 ~ 2023/08/31</p>
+                                </div>
+                                <div class="poster">
+                                    <img src="img/event_item1.jpg">
+                                </div>
+                                <div class="arrow">
+                                    <img src="img/m-arrow.png">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="event_title">
+                                    <p>EVENT</p>
+                                    <h3>[제작지원] KBS 드라마 '어쩌다 마주친, 그대' 제작지원
+                                    </h3>
+                                    <p class="day">2023/05/01 ~ 2023/06/20</p>
+                                </div>
+                                <div class="poster">
+                                    <img src="img/event_item2.jpg">
+                                </div>
+                                <div class="arrow">
+                                    <img src="img/m-arrow.png">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="event_title">
+                                    <p>EVENT</p>
+                                    <h3>[NEW VIDEO] 내가 셀렉하는 오늘의 무드는?</h3>
+                                    <p class="day">2022/10/18 ~ 2024/10/18</p>
+                                </div>
+                                <div class="poster">
+                                    <img src="img/event_item3.png">
+                                </div>
+                                <div class="arrow">
+                                    <img src="img/m-arrow.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="circle_arrow_wrap">
+                    <div class="circle_arrow">
+                        <img class="rotate_c" src="img/m-circle-txt.png">
+                        <img class="c_arrow" src="img/m-arrow.png">
+                    </div>
+                </div>
+            </div>
+            <div class="sns">
+                <div class="sns_title">
+                    <img src="img/insta_icon.svg">
+                    <h2>selecto_coffee</h2>
+                </div>
+                <ul class="sns_con">
+                    <li><a href="https://www.instagram.com/p/Cs5HG93rbQJ"><img src="img/sns_mango.jpg"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/p/Cs3GTjPgEgV"><img src="img/sns_grapefruit.jpg"></a></li>
+                    <li><a href="https://www.instagram.com/p/CssC5QKLFOP"><img src="img/sns_mint.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_wrap">
+            <h1><a href="#"><img src="img/logo-white.svg"></a></h1>
+            <ul class="footer_link">
+                <li><a href="https://blog.naver.com/maxone01"><img src="img/naver.svg"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCM8GQsYfu6I4MgYwjnCJXrg/featured"><img
+                            src="img/youtube.svg"></a></li>
+                <li><a href="https://www.instagram.com/selecto_coffee/"><img src="img/inta.svg"></a></li>
+            </ul>
+            <h4><a href="#">개인정보취급방침</a></h4>
+            <div class="footer_info_1">
+                <span>주소 : 서울시 구로구 구로3동 222-14 에이스하이엔드타워 2차 1402호
+                </span>
+                <div class="info_line"></div>
+                <span>도로명주소 : 서울시 구로구 디지털로26길 61 에이스하이엔드타워 2차 1402호</span>
+            </div>
+            <div class="footer_info_2">
+                <span>대표이사 : 황규연</span>
+                <div class="info_line"></div>
+                <span>사업자등록번호 : 109-81-99153</span>
+                <div class="info_line"></div>
+                <span>전화 : 1600-5649</span>
+                <div class="info_line"></div>
+                <span>팩스 : 02-6340-1701</span>
+            </div>
+            <p>COPYRIGHT ㈜맥스원이링크 ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="totop">
+            <div class="totop_wrap">
+                <img class="totop_c" src="img/f_top_circle.png">
+                <img class="totop_a" src="img/f_top_arrow.png">
+            </div>
+            <p>TOP</p>
+        </div>
+    </footer>
+</body>
+
+</html>
